@@ -1,0 +1,231 @@
+* {
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+.navbar {
+    z-index: 150;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-collapse {
+        left: 50%;
+    }
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid white;
+}
+
+.navbar {
+    background-image: url('./images/navpic.png');
+    background-size: cover;
+}
+
+.service {
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+}
+
+.camp {
+    background-image: url('./images/CampingLifeSVGCutFile.Svg');
+}
+
+.activity, .track {
+    margin-left: 70px;
+}
+
+.activity {
+    background-image: url('./images/activities.Svg');
+}
+
+.tour {
+    background-image: url('./images/tourguide.Svg');
+}
+
+.track {
+    background-image: url('./images/track.Svg');
+}
+
+.section {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.images {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.camp-detail {
+    margin-top: 80px;
+    padding-left: 100px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.2rem;
+}
+
+.camp-title {
+    letter-spacing: 10px;
+    width: 100%;
+    font-weight: 500;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.pic {
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+    margin-top: 50px;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.camppic1 {
+    margin-left: 135px;
+    background-image: url('https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtcGluZ3xlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-size: cover;
+}
+
+.camppic2 {
+    background-image: url('https://media.istockphoto.com/photos/couple-sitting-in-camp-chairs-looking-at-sunset-above-river-in-picture-id1262230418?k=20&m=1262230418&s=612x612&w=0&h=cTFF_kSTsdK0UNnXDBF3wft6m4dJFojXKquP9J297bw=');
+    background-size: cover;
+}
+
+.camppic3 {
+    background-image: url('https://northernvirginiamag.com/wp-content/uploads/2020/06/couple-camping.jpg');
+    background-size: cover;
+}
+
+.layer {
+    background: transparent;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.4);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    opacity: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 48%;
+    opacity: 1;
+}
+
+.activity-detail {
+    margin-top: 80px;
+    padding-left: 53px;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 1.2rem;
+}
+
+.activity1 {
+    margin-left: 135px;
+    padding-bottom: 100px;
+    background-image: url('https://images.unsplash.com/photo-1612533593467-90e3dcbe884b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJlYWNoJTIwdm9sbGV5YmFsbHxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-size: cover;
+}
+
+.activity2 {
+    background-image: url('https://hipcamp-res.cloudinary.com/image/upload/c_fill,f_auto,g_auto,h_400,q_60,w_780/v1/ycamp_images/photos/5e97e2ab225af.jpg');
+    background-size: cover;
+}
+
+.activity3 {
+    background-image: url('http://kilcoo.com/wp-content/uploads/2016/09/Rock-Climbing.jpeg');
+    background-size: cover;
+}
+
+.tourpic1 {
+    margin-left: 135px;
+    padding-bottom: 100px;
+    background-image: url('https://coda.newjobs.com/api/imagesproxy/ms/niche/images/articles/Liz/TourGuide.jpg');
+    background-size: cover;
+}
+
+.tourpic2 {
+    background-image: url('https://www.traveldailymedia.com/assets/2019/10/myproguide-singapore-walking-tour-1024x768.jpg');
+    background-size: cover;
+}
+
+.tourpic3 {
+    background-image: url('https://media.istockphoto.com/photos/guide-talking-to-tourists-picture-id1140615664?k=20&m=1140615664&s=612x612&w=0&h=NZXXJj_MXfGjZ1iJSoYn4A8vcxHjhkiHzt45uWJgm_Y=');
+    background-size: cover;
+}
+
+.track1 {
+    margin-left: 135px;
+    background-image: url('https://media.istockphoto.com/photos/friends-sitting-on-grass-and-looking-at-map-on-camping-trip-picture-id843909252?k=20&m=843909252&s=612x612&w=0&h=7FI1WW4TuayjSOs7XAmaITtGJmFkkYkB1qcAZXSJsTM=');
+    background-size: cover;
+}
+
+.track2 {
+    background-image: url('https://thumbs.dreamstime.com/b/traveler-catch-cellular-network-use-his-mobile-phone-sitting-tent-mobile-connection-concept-image-traveler-catch-cellular-132502075.jpg');
+    background-size: cover;
+}
+
+.track3 {
+    background-image: url('https://media.istockphoto.com/photos/young-hiker-friends-reading-a-map-for-directions-picture-id692495790?k=20&m=692495790&s=612x612&w=0&h=cElhAVlo9nGrfqJjYRjqPRgw5dPekWuPJ-5CknHyfRg=');
+    background-size: cover;
+}
+
+.footer {
+    background: url('./images/footer-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 3rem;
+}
+
+.footer .box-container .box h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.footer .box-container .box a {
+    color: var(--light-white);
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.footer .box-container .box a i {
+    color: rgb(90,
+            142,
+            163);
+    ;
+    padding-right: .5rem;
+    transition: .2s linear;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.box {
+    margin-top: 40px;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./home.css" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Title -->
+    <title>Travel Website Homepage</title>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container nav-contents">
+        <a href="" class="navbar-brand"><b>World Dive</b></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#bar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bar">
+          <ul class="navbar-nav nav-items ms-auto">
+            <li class="nav-item">
+              <a href="./home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="./packages.html" class="nav-link">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a href="./gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link about">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#login" class="nav-link login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="#signup" class="nav-link signup">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleControls"
+      class="my-carousel carousel slide"
+      data-bs-ride="carousel"
+      data-interval="100"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1519055676067-4f45655f6f4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="d-block w-100 imgCarousel"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item item-1">
+          <img
+            src="https://images.unsplash.com/photo-1544220830-7da42df1ff8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="d-block w-100 imgCarousel"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item item-2">
+          <img
+            src="https://images.unsplash.com/photo-1519944734258-61d6d3e542f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            class="d-block w-100 imgCarousel"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Navbar  Ends-->
+
+    <!-- Search -->
+    <section class="text-light p-5 bg-dark">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3>Search for Packages</h3>
+
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control city-search"
+              placeholder="Search Country/City"
+              id="searchText"
+            />
+            <button
+              class="btn btn-outline-secondary text-light"
+              type="button"
+              id="searchBtn"
+            >
+              <div class="d-md-flex justify-content-between align-items-center">
+                <div class="mx-2">Search</div>
+                <div class="img"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Body Section -->
+    <section class="main-section">
+      <!-- Services Section -->
+      <div class="section p-5">
+        <div class="container text-center mb-3">
+          <div class="row justify-content-center">
+            <div class="col col-12 services-text">OUR SERVICES</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row text-center justify-content-between">
+            <div class="col-md">
+              <div class="card service-card">
+                <div class="card-body text-center">
+                  <i class="fas fa-hiking" style="font-size: 50px"></i>
+                  <h4 class="card-title">
+                    <a href="./services.html#camp">Camping</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card service-card">
+                <div class="card-body text-center">
+                  <i class="fas fa-map-marked-alt" style="font-size: 50px"></i>
+                  <h4 class="card-title">
+                    <a href="./services.html#track">Tracking</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card service-card">
+                <div class="card-body text-center">
+                  <i class="fas fa-swimmer" style="font-size: 50px"></i>
+                  <h4 class="card-title">
+                    <a href="./services.html#activity">Fun Activities</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card service-card">
+                <div class="card-body text-center">
+                  <i class="fa-solid fa-signs-post" style="font-size: 50px"></i>
+                  <h4 class="card-title">
+                    <a href="./services.html#tour">Tour Guide</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Packages -->
+      <section class="p-5">
+        <div class="container text-center mb-3">
+          <div class="row justify-content-center">
+            <div class="col col-12 packages-text">BEST PACKAGES</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row text-center justify-content-between g-4">
+            <div class="col-md">
+              <div class="card bg-light text-dark package">
+                <img
+                  src="https://media.tatler.com/photos/637279a04698b173f4e77b25/4:3/w_1704,h_1278,c_limit/UBP_141122_Palace%209.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Umaid Bhawan Palace</h5>
+                  <p class="card-text">
+                    Step into the grandeur of the iconic Umaid Bhawan Palace with your loved ones, where luxury meets heritage. 
+                    Nestled in the heart of Jodhpur, this magnificent palace is a blend of regal charm and modern comfort. 
+                    As one of the world’s largest private residences, it offers a unique opportunity to immerse yourself in the rich 
+                    history, culture, and traditions of Rajasthan. Surrounded by lush gardens and breathtaking views of the Blue City, 
+                    Umaid Bhawan Palace promises an unforgettable stay filled with royal elegance and timeless beauty.
+                  </p>
+                  <a href="#" class="btn btn-book">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card bg-light text-dark package">
+                <img
+                  src="https://travelfreak.com/wp-content/uploads/2018/10/north-shore-oahu.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">North Shore Tour</h5>
+                  <p class="card-text">
+                    Take your friends to this once in a life time journey. Skip
+                    the hassle of renting a car and see the highlights of Oahu
+                    North Shore from the comfort of a minibus or van. Along the
+                    way, a guide keeps you entertained and shares details about
+                    the island that you would likely miss if traveling on your
+                    own. At each stop, you can enjoy free time to swim, shop,
+                    paddleboard/kayak or do an optional waterfall hike while
+                    getting to know the island.
+                  </p>
+                  <a href="#" class="btn btn-book">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="card bg-light text-dark package">
+                <img
+                  src="https://static.independent.co.uk/2022/06/14/11/1.%20Amsterdam%20Open%20Boat%20Canal%20Cruise%20-%20Live%20Guide%20-%20from%20Anne%20Frank%20House%203.jpeg?width=1200"
+                  class="card-img-top"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Amsterdam Open Boat Canal Cruise</h5>
+                  <p class="card-text">
+                    Experience the beauty of Amsterdams canals by going on this
+                    scenic cruise. Pass by Anne Frank House, the Jordaan, the
+                    Houseboat Museum, Leiden Square, Rijksmuseum, De Duif and
+                    much more.Experience the beauty of Amsterdams canals by
+                    going on this scenic cruise. Pass by Anne Frank House, the
+                    Jordaan, Leiden Square, Rijksmuseum, De Duif and much more.
+                  </p>
+                  <a href="#" class="btn btn-book">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="center-div">
+          <br /><br />
+          <a href="./packages.html" class="btn btn-book">Explore More</a>
+        </div>
+      </section>
+      <!-- End Packages -->
+    </section>
+    <!-- End Body Section -->
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <div class="container box-container">
+        <div class="row">
+          <div class="col col-4 box">
+            <h3>Contact Us</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9999999999 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9999988888 </a>
+            <a href="#">
+              <i class="fas fa-envelope"></i> worlddive@gmail.com
+            </a>
+            <a href="#"> <i class="fas fa-map"></i> Bangalore, India </a>
+          </div>
+
+          <div class="col-4 box">
+            <h3>Socials</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> Linkedin </a>
+          </div>
+
+          <div class="col-4">
+            <img src="./Travel_fall_in_love_and_be_happy_6210.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./search.js"></script>
+  </body>
+</html>
