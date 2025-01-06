@@ -15,9 +15,6 @@ Following are the some of the screenshots of the UI of the website.
 ![](readme%20images/7.jpg)
 
 5.
-![](readme%20images/5.jpg)
-
-6.
 ![](readme%20images/8.jpg)
 
 
